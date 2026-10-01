@@ -1,0 +1,126 @@
+.admissions {
+    padding: 90px 20px;
+    background: #f4f7fb;
+    font-family: Arial, sans-serif;
+  }
+
+  .admissions-container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .admissions-content {
+    max-width: 750px;
+    margin-bottom: 50px;
+  }
+
+  .eyebrow {
+    color: #006633;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .admissions h2 {
+    margin: 12px 0 20px;
+    color: #003b2a;
+    font-size: clamp(36px, 5vw, 58px);
+    line-height: 1.1;
+  }
+
+  .admissions-content p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .admissions-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    padding: 14px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.25s;
+  }
+
+  .btn-primary {
+    background: #006633;
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background: #004d26;
+  }
+
+  .btn-secondary {
+    border: 2px solid #006633;
+    color: #006633;
+    background: white;
+  }
+
+  .btn-secondary:hover {
+    background: #e8f3ed;
+  }
+
+  .admissions-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  .admission-card {
+    background: white;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+
+  .admission-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+  }
+
+  .icon {
+    font-size: 38px;
+    margin-bottom: 18px;
+  }
+
+  .admission-card h3 {
+    color: #003b2a;
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .admission-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 22px;
+  }
+
+  .admission-card a {
+    color: #006633;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .admission-card a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 800px) {
+    .admissions-cards {
+      grid-template-columns: 1fr;
+    }
+
+    .admissions {
+      padding: 60px 20px;
+    }
+  }
